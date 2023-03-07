@@ -21,10 +21,10 @@ Button Secondary Text Color: #2b2b2b;
 */
 
 :root {
+    --background-color: #f7f8f9;
+    --color: #012b55;
     --primary-color: #357b70;
     --secondary-color: #e0b354;
-    --color: #2b2b2b;
-    --background-color: silver;
     --button-bg-color: #357b70;
     --color-active: #2e2e2e;
     --font-size: 16px;
