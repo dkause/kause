@@ -22,7 +22,7 @@ Button Secondary Text Color: #2b2b2b;
 
 :root {
     --background-color: #f7f8f9;
-    --color: #012b55;
+    --color: #54A0B8;
     --primary-color: #357b70;
     --secondary-color: #e0b354;
     --button-bg-color: #357b70;
@@ -139,6 +139,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 .page {
     display:flex;
     flex-direction: column;
+    margin:0 auto;
+    max-width: 1024px;
+    padding: 0 22px;
 }
 
 .page-header {
