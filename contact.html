@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
@@ -41,24 +41,38 @@
         </header>
         <!-- Here is the content -->
         <main class="contact">
-            <img src="img/Daniel_Kause-Fotograf-150px.jpg" height="33%" width="33%" alt="Daniel Kause Portrait">
+            <div class="contact-image">
+            <img src="img/Daniel_Kause-Fotograf-150px.jpg" alt="Daniel Kause Portrait">
+        </div>
+            <div class="contact-form">
             <h1>Contact</h1>
             <form action="" method="post" id="contact-form">
-                <label for="contact-email" class="standard-label">E-mail: </label>
-                <input id="contact-email" type="email" required>
-                <br />
-                <label for="contact-phone" class="standard-label">Telephone: </label>
-                <input id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" type="tel">
-                <br />
-                <label for="contact-textarea" class="standard-label">Message: </label>
-                <textarea id="contact-textarea" maxlength="240" required></textarea>
-                <br />
+                <div>
+                    <label for="name" class="standard-label">Name:</label><br>
+                    <input placeholder="Your Name please" id="contact-name" required>
+                </div>
+                <div>
+                    <label for="contact-email" class="standard-label">E-mail:</label><br>
+                    <input placeholder="Type in your E-Mail" id="contact-email" type="email" required>
+                </div>
+                <div>
+                    
+                    <label for="contact-phone" class="standard-label">Telephone:</label><br>
+                    <input placeholder="your phonenumber" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" type="tel">
+                    
+                </div>
+                <div>
+                    <label for="contact-textarea" class="standard-label">Message:</label><br>
+                    <textarea placeholder="And here your Message please!" id="contact-textarea" maxlength="240" rows="4" cols="30" required></textarea>
+                    
+                </div>
                 <input type="submit" value="Send message">
             </form>
+        </div>
         </main>
         <!-- This is footer including contact data-->
         <footer class="page-footer">
-            <div class="page-footer__item">
+            <div class="page-footer__item page-footer__adress">
                 Daniel Kause<br>
                 Bänschstr. 26<br>
                 10247 Berlin<br>

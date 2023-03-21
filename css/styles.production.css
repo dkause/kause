@@ -8,11 +8,11 @@
 /*
 Colors Used
 
-Background Color (Silver): #0c0c0c;
+Background Color (Silver): #f7f8f9;
 
-Text Color (Dark Grey): #2b2b2b;
+Text Color (Dark Grey): #54a0b8;
 
-Primary Color (Magenta): #f31486;
+Primary Color (Magenta): #357b70;
 Secondary Color (Orange): #e0b354;
 
 Link Color:#2b2b2b;
@@ -22,20 +22,14 @@ Button Primary Background Color: #357b70;
 Button Primary Text Color: white;
 Button Secondary Background Color: #e0b354
 Button Secondary Text Color: #2b2b2b;
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 */
 
-* {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; /* padding und border in die gesamtgröße eingerechnet: width:100px; border:9px; Padding:10x; ergibt eine Box von 100 - 9 border - 10 padding = 62px   */
-}
+
 
 body {
     background-color:#f7f8f9;
     font-family: 'IBM Plex Serif', serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -46,7 +40,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: calc(16px* 2);
-    font-weight: calc(400 + 260);
+    font-weight: calc(100 + 260);
 }
 
 h2 {
@@ -170,6 +164,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -195,6 +192,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     max-width: 700px;
     margin: 0 3%;
     
+    
 }
 /* TODO Change this if the right content is there*/ 
 .aboutme a.button {
@@ -208,7 +206,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     float: left;
     width: 250px;
     height: auto;
-    margin-right: 3%;
+    margin: 5% 3%;
     border-radius: 50%; /* this makes a circle!*/
 }
 
@@ -236,7 +234,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 .page-footer__item {
     clear: both;
     text-align: center;
-}    
+}
+.page-footer__adress {
+    font-size: calc(16px * 0.8);
+    text-align: left;
+}   
 
 /* Grid-Layout*/
 
@@ -325,60 +327,38 @@ button:hover, button:focus, .button:hover, .button:focus {
       font-size: 22px;
     }
   }
-
-/* Animationen */
-
-@-webkit-keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f76414;
-    }
+main.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: auto ;
+   
 }
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f76414;
-    }
+.contact-image {
+    margin: auto 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    text-align: center;
+    margin-right: 3%;
 }
-
-.sun {
-    -webkit-animation: 4s color-change infinite alternate linear;
-            animation: 4s color-change infinite alternate linear;
+div.contact-image img {
+    width: 100%;
+    height: 100%;
+}   
+.contact-form {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+    
 }
-
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-
-@keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-                transform: translate(0, 50px);
-    }
-    to {
-        -webkit-transform: translate(200px, 50px);
-                transform: translate(200px, 50px);
-    }
-}
-.cloud-front {
-    -webkit-animation: cloud-move 30s infinite alternate linear;
-            animation: cloud-move 30s infinite alternate linear;
+form div {
+    margin-top: 10%;
 }
