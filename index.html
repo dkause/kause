@@ -1,87 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Kause - now on github.com and live</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel Kause - UX Designer and Full-Stack-Developer</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-    <div class="page">
-        <!-- Logo and Navigation starts here -->
-        <header class="page-header">
-            <img src="img/Logo-Kause.png" alt="logo" class="page-header__item">
-            <nav class="page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a role="menuitem" href="index.html"
-                            class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" href="work.html" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" href="about.html" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" href="contact.html" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Here is the content -->
-        <main>
-            <div class="profile">
-                <img src="img/Daniel_Kause-Fotograf-150px.jpg" alt="Daniel Kause Portrait" class="profile__portrait">
-                <h1>Hello Internet!</h1>
-                <p>
-                    My name is Daniel Kause. I am a <a href="https://silberblick.net">photographer</a>, <a
-                        href="https://danielkause.de">UX Designer</a> and currently learning html and css and
-                    javascript.<br>
-                    My goal is to provide my customers with simple, handwritten websites, that work and look
-                    good. Small and individual websites, for small companies and entrepreneurs to get a visual
-                    appealing, working and fast impact in the internet.
-                    <br>
-                    To get in contact, you can always drop me an e-mail:
-                    <a href="mailto:d.kause@icloud.com">Click here and send me an Email.</a>
-                </p>
-            </div>
-        </main>
-        <!-- This is footer including contact data-->
-        <footer class="page-footer">
-            <div class="page-footer__item page-footer__adress">
-                Daniel Kause<br>
-                Bänschstr. 26<br>
-                10247 Berlin<br>
-                Deutschland<br>
-            </div>
-            <div class="page-footer__item">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.zinc.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.production.css" />
+  </head>
 
-                <a href="tel:+491605535613">Call me at this number: +49 160 5535613</a><br>
-                Skype <a href="live:daniel.kause_1"> Daniel Kause</a><br>
-                <a href="mailto:d.kause@icloud.com">d.kause (at) icloud (dot) com</a>
-            </div>
-            <div class="page-footer__item">
-                <p>Find me on</p>
-                <!-- width an height should become a class in css-->
-                <div class="social-media">
-                    <img style="width:30px; height:30px" src="img/github_icon.svg" alt="Github">
-                    <img width="30" height="30" src="img/twitter_icon.svg" alt="Twitter">
-                    <img width="30" height="30" src="img/linkedin_icon.svg" alt="LinkedIn">
-                </div>
-            </div>
-        </footer>
-    </div>
-</body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <img src="img/Logo-Kause.png" alt="logo" />
+        </ul>
+        <ul role="menubar">
+          <li role="presentation">
+            <a role="menuitem" href="#home">Home</a>
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#work" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#about" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a role="menuitem" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- Logo and Navigation starts here -->
 
+      <!-- Here is the content -->
+      <section class="grid" id="home">
+        <div>
+          <img
+            class="profile__portrait"
+            src="img/Daniel_Kause-Fotograf-150px.jpg"
+            alt="Daniel Kause Portrait"
+          />
+        </div>
+        <div>
+          <h2>Hello!</h2>
+          <p>
+            My name is Daniel Kause. I am a Web Developer with a background as a
+            UX Designer and Photographer.
+            <br />
+            To get in contact:
+            <a href="mailto:d.g.kause@gmail.com">Send me an Email.</a>
+          </p>
+        </div>
+      </section>
+      <section class="section__margin" id="about">
+        <h2>About me</h2>
+        <p>
+          My name is Daniel and a Berlin native with a everchanging career like
+          my beloved hometown.<br />I work as a
+          <a href="https://silberblick.net">photographer</a> since the nineties,
+          ran differents studios, became an UX Designer, and now I am a Full
+          Stack Developer. Learing and trying new things out is in my DNA.
+          <br />From early 2000s I explored CMS like Typo3, Wordpress and
+          started building websites with plain code. As a photographer I
+          transformed early into digital tools. My experience, especially with
+          corporate customers, revealed the need for a streamlined tool. So, I
+          decided to become an UX Designer and create an
+          <a href="https://danielkause.de">case study</a> for a photo-proofing
+          app. <br />Now as a Full-Stack-Developer I am realizing this vision.
+        </p>
+      </section>
+      <section class="section__margin" id="work">
+        <h2 class="explorer">Explore my my Fullstack learning projects</h2>
+        <div class="grid">
+          <!-- Grid items will live here -->
+          <div>
+            <h3>E01 - Pokeview</h3>
+            <p>
+              In this Introduction to Javascript, the goal was to create an app
+              where you can browse and view Pokemons in detail. The data is
+              fetched from the pokemon API. It uses <mark>bootstrap</mark>,
+              <mark>jquery</mark>, <mark>css</mark>and <mark>Html</mark>.
+            </p>
+            <img
+              alt="screenshot of Poekview"
+              src="./img/e1.pokemon.png"
+              width="100%"
+            />
+            <a
+              href="https://github.com/dkause/PokeView-App
+                  "
+              >See the project on GitHub</a
+            ><br />
+            <a href="https://dkause.github.io/PokeView-App/"
+              >See the project in Action</a
+            >
+          </div>
+
+          <div>
+            <h3>E02 - MyFlix API (Backend)</h3>
+            <p>
+              This project introduced <mark>Server Side Programming</mark> and
+              <mark>Node</mark>. The outcome is an API which can connects a
+              mongo database with different frontends. It uses a token for
+              security.
+            </p>
+            <img
+              src="./img/token_remote.png"
+              width="100%"
+              alt="screenshot of postman"
+            />
+            <a href="https://github.com/dkause/myflix-API"
+              >See the project on GitHub</a
+            ><br />
+            <a href="https://movie-api-5rhq.onrender.com/"
+              >See the project in action</a
+            >
+          </div>
+
+          <div>
+            <h3>E03 - REACT Client for myFlix-API</h3>
+            <p>
+              This exercise showcases a client frontend using the
+              <mark>REACT</mark> library. It uses the MyFlix API backend and
+              users can browse
+            </p>
+            <img
+              alt="screenshot of MeetApp"
+              width="100%"
+              src="./img/e3.my-flix.png"
+            />
+            <a href="https://github.com/dkause/myflix-client"
+              >See project on GitHub</a
+            ><br />
+            <a href="https://kause-myflix.netlify.app/"
+              >See project in Action</a
+            >
+          </div>
+
+          <div>
+            <h3>E04 - MeetApp - Flesh Up Your IT-Skills</h3>
+            <p>
+              This project showcases a <mark>serverless</mark> Progessive Web
+              App using <mark>React</mark>,
+              <mark>Google Authentification</mark> and
+              <mark>Amazon Lambda</mark>.<br />
+              Its purpose is to display IT events depending on a city, using
+              cards and charts.
+            </p>
+            <img
+              alt="screenshot of MeetApp"
+              width="100%"
+              src="./img/meetAppScrsht.png"
+            />
+            <a href="https://github.com/dkause/meet">See project on GitHub</a
+            ><br />
+            <a href="https://dkause.github.io/meet">See project in Action</a>
+          </div>
+          <div>
+            <h3>
+              E05 - Native App Development - Chat Client with React Native
+            </h3>
+            <p>
+              Elephant-Chat uses <mark>Firebase</mark> for real-time messaging.
+              Users can send text messages, images, and share their location.<br />
+              Build in <mark>React Native</mark>, I used <mark>Expo</mark> for
+              mobile clients.
+            </p>
+            <img
+              alt="screenshot of MeetApp"
+              height="60px"
+              src="./img/e5.elephant-chat2.png"
+            />
+            <a href="https://github.com/dkause/ElephantChat"
+              >See project on GitHub</a
+            ><br />
+            <a href="https://dkause.github.io/meet">See project in Action</a>
+          </div>
+          <div>
+            <h3>E06 Client in Angular for MyFlixAPI</h3>
+            <p>
+              This project showcases a <mark>Angular</mark> based web app. The
+              user can browse movies, view details and manage their favorite
+              movies. It features Angular Material<br />
+              This connects to MyFlix API (Backend). Written in
+              <mark>Typescript</mark> it features extensive
+              <mark>TypeDoc</mark> documentation.
+            </p>
+            <img
+              alt="screenshot of MeetApp"
+              width="100%"
+              src="./img/e6.myflix-angular.png"
+            />
+            <a href="https://github.com/dkause/myFlix-Angular-client"
+              >See project on GitHub</a
+            ><br />
+            <a href="https://dkause.github.io/myFlix-Angular-client/movies"
+              >See the project in Action</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- This is footer including contact data-->
+    <footer class="page-footer">
+      <div class="page-footer__item page-footer__adress">
+        Daniel Kause<br />
+        Bänschstr. 26<br />
+        10247 Berlin<br />
+        Deutschland<br />
+      </div>
+      <div class="page-footer__item">
+        Phone: <a href="tel:+491605535613">+49 160 5535613</a><br />
+        Skype: <a href="live:daniel.kause_1"> Daniel Kause</a><br />
+        Email:
+        <a href="mailto:d.g.kause@gmail.com">d.g.kause@gmail.com</a>
+      </div>
+    </footer>
+  </body>
 </html>
