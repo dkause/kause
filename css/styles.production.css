@@ -32,6 +32,7 @@ body {
   font-weight: 100;
   font-size: 16px;
   line-height: 1.6;
+  color: #373c44;
 }
 
 h1,
@@ -73,71 +74,6 @@ a:focus {
 
 a:active {
   color: #2e2e2e;
-}
-
-/* Buttons */
-
-/* overwrites browser defaults and resets the border */
-button {
-  border: none;
-
-  /* takes the font from the outer container */
-  font-family: inherit;
-
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-
-  /* adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  margin-left: 4px;
-  -webkit-transition: 0.3s opacity;
-  -o-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-}
-
-.button {
-  border: none;
-
-  /* takes the font from the outer container */
-  font-family: inherit;
-
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: white;
-  text-decoration: none;
-
-  /* adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  margin-left: 4px;
-  -webkit-transition: 0.3s opacity;
-  -o-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
-
-.button__secondary {
-  background-color: #e0b354;
-  color: #54a0b8;
 }
 
 /* Navigation */
