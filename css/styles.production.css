@@ -23,7 +23,9 @@ Button Primary Text Color: white;
 Button Secondary Background Color: #e0b354
 Button Secondary Text Color: #2b2b2b;
 */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f7f8f9;
   font-family: 'IBM Plex Serif', serif;
@@ -267,6 +269,15 @@ button:focus,
     margin: 0;
     /* might be not necessary because of normalize */
   }
+  .grid__two {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0 10%;
+    /* might be not necessary because of normalize */
+  }
 
   .grid__item {
     background-color: lightgray;
@@ -287,6 +298,10 @@ button:focus,
 
 @media all and (max-width: 500px) {
   .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .grid__two {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -320,6 +335,15 @@ button:focus,
   a.button {
     font-size: 50%;
     padding: 5px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > ul {
+    margin-right: 7%;
   }
 }
 
@@ -371,10 +395,6 @@ main.contact {
 div.contact-image img {
   width: 100%;
   height: 100%;
-}
-
-.container {
-  max-width: 960px;
 }
 
 .section__margin {
