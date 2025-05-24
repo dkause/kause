@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daniel Kause - UX Designer and Full-Stack-Developer</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Grundlegende Meta-Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daniel Kause - UX Designer und Full-Stack Developer aus Berlin">
+  
+  <title>Daniel Kause - UX Designer and Full-Stack-Developer</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.zinc.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.production.css" />
-    <!-- Hotjar Tracking Code for https://silberblick.net -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3519944,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  
+  <!-- Performance Optimierungen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Kritische CSS-Ressourcen -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="./css/styles.production.css">
+  
+  <!-- Schriften -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Analytics (ans Ende des head-Bereichs) -->
+  <script async src="https://static.hotjar.com/c/hotjar-3519944.js?sv=6"></script>
+</head>
 
   <body>
-    <header>
+    <header class="container">
       <nav>
-        <ul>
-          <img src="img/Logo-Kause.png" alt="logo" />
-        </ul>
-
+        <ul><li><strong>KAUSE</strong></li></ul>
         <ul role="menubar">
           <li role="presentation">
             <a role="menuitem" href="#home">Home</a>
           </li>
           <li role="presentation">
-            <a role="menuitem" href="#work" class="navigation-list__item"
+            <a role="menuitem" href="#work"
               >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a role="menuitem" href="#about" class="navigation-list__item"
-              >About Me</a
             >
           </li>
           <li role="presentation">
@@ -56,65 +47,65 @@
           </li>
         </ul>
       </nav>
+
     </header>
     <main class="container">
-      <!-- Logo and Navigation starts here -->
 
       <!-- Here is the content -->
-      <section class="profile grid__two" id="home">
-        <div>
-          <img
-            class="profile__portrait"
-            src="img/Daniel_Kause-Fotograf-150px.jpg"
-            alt="Daniel Kause Portrait"
-          />
-        </div>
-        <div>
-          <h2>Hello!</h2>
-          <p>
-            My name is Daniel Kause. I am a Web Developer with a background as a
-            UX Designer and Photographer.
-            <br />
-            To get in contact:
-            <a href="mailto:d.g.kause@gmail.com">Send me an Email.</a>
-          </p>
-        </div>
-      </section>
-      <section class="section__margin" id="about">
-        <div class="grid">
-          <div>
-            
-        <h2>About me</h2>
-          </div>
-          <div>
-            
-        <p>
-          My name is Daniel and a Berlin native with an everchanging career like
-          my beloved hometown.<br />I work as a
-          <a href="https://silberblick.net">photographer</a> since the nineties,
-          ran differents studios, became an UX Designer, and now I am a Full
-          Stack Developer. Learing and trying new things out is in my DNA.
-          <br />From early 2000s I explored CMS like Typo3, Wordpress and
-          started building websites with plain code. As a photographer I
-          transformed early into digital tools. My experience, especially with
-          corporate customers, revealed the need for a streamlined tool. So, I
-          decided to become an UX Designer and create an
-          <a href="https://danielkause.de">case study</a> for a photo-proofing
-          app. <br />Now as a Full-Stack-Developer I am realizing this vision.
-        </p>
-          </div>
-          </div>
-      </section>
+<section class="section section--home" id="home">
+  <div class="grid">
+
+
+    <div class="hello__Text">
+      <p><strong>Hello, I am Daniel!</strong></p>
+      <h1>UX Designer, Developer & Photographer</h1>
+      <p class="section__text">
+        As a Berlin native, born 1971, I've had a diverse career path.
+      </p>
+      <p class="section__text">
+        Working as a <a class="section__link" href="https://silberblick.net">photographer</a>
+        since the late 90s, my experience with corporate clients led to the desire to develop a
+        <a class="section__link" href="https://danielkause.de">photo-proofing app</a>, which is featureless, secure and fast.
+      </p>
+      <p class="section__text">
+        2022 I became a UX Designer and 2024 a Full Stack Developer.
+      </p>  <p class="profile__contact">
+        To get in contact:
+
+        <a class="secondary" href="mailto:d.g.kause@gmail.com">Email me.</a>
+
+      </p>
+    </div>
+    <div class="image-container-parent">
+
+    <div class="image-container">
+  <img
+    src="img/Daniel_Kause-Fotograf-150px.jpg"
+    alt="Portrait von Daniel Kause, professioneller Fotograf"
+    width="150"
+    height="150"
+    loading="lazy"
+    srcset="img/Daniel_Kause-Fotograf-150px.jpg 150w,
+            img/Daniel_Kause-Fotograf-300px.jpg 300w"
+    sizes="(max-width: 768px) 150px,
+           300px"
+  />
+</div>
+    </div>
+  </div>
+</section>
+
+</section>
       <section class="section__margin" id="work">
         <h2 class="explorer">Explore my Fullstack learning projects</h2>
-        <div class="grid">
+        <div class="grid__fr">
           <!-- Grid items will live here -->
           <div>
-            <h3>E01<br />Pokeview</h3>
+            <h3>Pokeview</h3>
             <p>
-              In this Introduction to Javascript, the goal was to create an app
-              where you can browse and view Pokemons in detail. The data is
-              fetched from the pokemon API. It uses <mark>bootstrap</mark>,
+              In this Introduction to JavaScript, the goal was to create an app
+              where you can browse and view Pokemon in detail. The data is
+              fetched from the Pokemon API. It uses <mark>bootstrap</mark>,
               <mark>jquery</mark>, <mark>css</mark>and <mark>Html</mark>.
             </p>
             <img
@@ -133,10 +124,10 @@
           </div>
 
           <div>
-            <h3>E02<br />MyFlix API (Backend)</h3>
+            <h3>MyFlix API (Backend)</h3>
             <p>
               This project introduced <mark>Server Side Programming</mark> and
-              <mark>Node</mark>. The outcome is an API which can connects a
+              <mark>Node</mark>. The outcome is an API that can connect a
               mongo database with different frontends. It uses a token for
               security.
             </p>
@@ -154,7 +145,7 @@
           </div>
 
           <div>
-            <h3>E03<br />REACT Client for myFlix-API</h3>
+            <h3>REACT Client for myFlix-API</h3>
             <p>
               This exercise showcases a client frontend using the
               <mark>REACT</mark> library. It uses the MyFlix API backend and
@@ -174,7 +165,7 @@
           </div>
 
           <div>
-            <h3>E04<br />MeetApp - Flesh Up Your IT-Skills</h3>
+            <h3>MeetApp - Flesh Up Your IT-Skills</h3>
             <p>
               This project showcases a <mark>serverless</mark> Progessive Web
               App using <mark>React</mark>,
@@ -194,7 +185,7 @@
           </div>
           <div>
             <h3>
-              E05<br />Native App Development - Chat Client with React Native
+              Native App Development - Chat Client with React Native
             </h3>
             <p>
               Elephant-Chat uses <mark>Firebase</mark> for real-time messaging.
@@ -214,8 +205,7 @@
           </div>
           <div>
             <h3>
-              E06<br />
-              Client in Angular for MyFlixAPI
+                          Client in Angular for MyFlixAPI
             </h3>
             <p>
               This project showcases a <mark>Angular</mark> based web app. The
@@ -241,21 +231,16 @@
       </section>
     </main>
     <!-- This is footer including contact data-->
-    <footer class="page-footer">
+    <footer class="container page-footer">
       <div class="page-footer__item page-footer__adress">
         Daniel Kause<br />
         Bänschstr. 26<br />
         10247 Berlin<br />
         Deutschland<br />
       </div>
-      <div class="page-footer__item">
-        Daniel @ <br />
-        <a href="https://medium.com/@kause">Medium</a><br />
-        <a href="https://twitter.com/DanielKause">Twitter</a>
-      </div>
+
       <div class="page-footer__item" id="contact">
         Phone: <a href="tel:+491605535613">+49 160 5535613</a><br />
-        Skype: <a href="live:daniel.kause_1"> Daniel Kause</a><br />
         Email:
         <a href="mailto:d.g.kause@gmail.com">d.g.kause@gmail.com</a>
       </div>

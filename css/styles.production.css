@@ -199,7 +199,7 @@ a:active {
 /* end grid fallback */
 
 @supports (display: grid) {
-  .grid {
+  .grid__fr {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -275,15 +275,7 @@ a:active {
     font-size: 50%;
     padding: 5px;
   }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  nav > ul {
-    margin-right: 7%;
-  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -323,12 +315,11 @@ main.contact {
 }
 
 .contact-image {
-  margin: auto 0;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   text-align: center;
-  margin-right: 3%;
+  margin: auto 3% auto 0;
 }
 
 div.contact-image img {
@@ -340,15 +331,52 @@ div.contact-image img {
   margin-top: 9%;
 }
 
-nav {
-  justify-content: flex-start;
-}
-
-nav > ul {
-  margin-right: 7%;
+.hello__Text {
+ padding: 7%;
 }
 
 .explorer {
   text-shadow: 2px 2px 0 rgba(0, 128, 128, 0.254),
     4px 4px 0 rgba(0, 128, 128, 0.354), 6px 6px 0 rgba(32, 178, 171, 0.298);
+}
+
+.image-container-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* oder die gewünschte Höhe */
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  transform: rotate(17deg);
+  box-shadow: 0 8px 25px rgba(17, 24, 39, 0.15);
+  transition: all 0.3s ease;
+  display: inline-block; /* oder block, je nach gewünschtem Verhalten */
+}
+
+.image-container:hover {
+  transform: rotate(0deg);
+  box-shadow: 0 12px 35px rgba(17, 24, 39, 0.25);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* verhindert Verzerrung des Bildes */
+}
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+          to right,
+          rgba(255, 225, 0, 0.1),
+          rgba(255, 225, 0, 0.7) 4%,
+          rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
