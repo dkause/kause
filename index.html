@@ -1,101 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
-  <!-- Grundlegende Meta-Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Daniel Kause - UX Designer und Full-Stack Developer aus Berlin">
-  
-  <title>Daniel Kause - UX Designer and Full-Stack-Developer</title>
+    <!-- Grundlegende Meta-Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Daniel Kause - UX Designer und Full-Stack Developer aus Berlin"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico" sizes="any">
-  
-  <!-- Performance Optimierungen -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Kritische CSS-Ressourcen -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <link rel="stylesheet" href="./css/styles.production.css">
-  
-  <!-- Schriften -->
-  <link 
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  >
+    <title>Daniel Kause - UX Designer and Full-Stack-Developer</title>
 
-  <!-- Analytics (ans Ende des head-Bereichs) -->
-  <script async src="https://static.hotjar.com/c/hotjar-3519944.js?sv=6"></script>
-</head>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
 
-  <body>
+    <!-- Performance Optimierungen -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Kritische CSS-Ressourcen -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Schriften -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Analytics (ans Ende des head-Bereichs) -->
+    <script
+      async
+      src="https://static.hotjar.com/c/hotjar-3519944.js?sv=6"
+    ></script>
+  </head>
+
+  <body class="modern-footer">
     <header class="container">
       <nav>
-        <ul><li><strong><span class="logo">K A U S E</span></strong></li></ul>
+        <ul>
+          <li>
+            <strong><span class="logo">K A U S E</span></strong>
+          </li>
+        </ul>
         <ul role="menubar">
           <li role="presentation">
             <a role="menuitem" href="#home">Home</a>
           </li>
           <li role="presentation">
-            <a role="menuitem" href="#work"
-              >Work</a
-            >
+            <a role="menuitem" href="#work">Work</a>
           </li>
           <li role="presentation">
             <a role="menuitem" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
-
     </header>
     <main class="container">
-
       <!-- Here is the content -->
-<section class="section section--home" id="home">
-  <div class="grid">
+      <section class="section section--home" id="home">
+        <div class="grid">
+          <div class="hello__Text">
+            <p><strong>Hello, I am Daniel!</strong></p>
+            <h1>UX Designer, Developer & Photographer</h1>
+            <p class="section__text">
+              As a Berlin native, born 1971, I've had a diverse career path.
+            </p>
+            <p class="section__text">
+              Working as a
+              <a class="section__link" href="https://silberblick.net"
+                >photographer</a
+              >
+              since the late 90s, my experience with corporate clients led to
+              the desire to develop a
+              <a class="section__link" href="https://danielkause.de"
+                >photo-proofing app</a
+              >, which is featureless, secure and fast.
+            </p>
+            <p class="section__text">
+              2022 I became a UX Designer and 2024 a Full Stack Developer.
+            </p>
+            <p class="profile__contact">
+              To get in contact:
 
-
-    <div class="hello__Text">
-      <p><strong>Hello, I am Daniel!</strong></p>
-      <h1>UX Designer, Developer & Photographer</h1>
-      <p class="section__text">
-        As a Berlin native, born 1971, I've had a diverse career path.
-      </p>
-      <p class="section__text">
-        Working as a <a class="section__link" href="https://silberblick.net">photographer</a>
-        since the late 90s, my experience with corporate clients led to the desire to develop a
-        <a class="section__link" href="https://danielkause.de">photo-proofing app</a>, which is featureless, secure and fast.
-      </p>
-      <p class="section__text">
-        2022 I became a UX Designer and 2024 a Full Stack Developer.
-      </p>  <p class="profile__contact">
-        To get in contact:
-
-        <a class="secondary" href="mailto:d.g.kause@gmail.com">Email me.</a>
-
-      </p>
-    </div>
-    <div class="image-container-parent">
-
-    <div class="image-container">
-  <img
-    src="img/Daniel_Kause-Fotograf-150px.jpg"
-    alt="Portrait von Daniel Kause, professioneller Fotograf"
-    width="150"
-    height="150"
-    loading="lazy"
-    srcset="img/Daniel_Kause-Fotograf-150px.jpg 150w,
-            img/Daniel_Kause-Fotograf-300px.jpg 300w"
-    sizes="(max-width: 768px) 150px,
+              <a class="secondary" href="mailto:d.g.kause@gmail.com"
+                >Email me.</a
+              >
+            </p>
+          </div>
+          <div class="image-container-parent">
+            <div class="image-container">
+              <img
+                src="img/Daniel_Kause-Fotograf-150px.jpg"
+                alt="Portrait von Daniel Kause, professioneller Fotograf"
+                width="150"
+                height="150"
+                loading="lazy"
+                srcset="
+                  img/Daniel_Kause-Fotograf-150px.jpg 150w,
+                  img/Daniel_Kause-Fotograf-300px.jpg 300w
+                "
+                sizes="(max-width: 768px) 150px,
            300px"
-  />
-</div>
-    </div>
-  </div>
-</section>
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-</section>
       <section class="section__margin" id="work">
         <h2 class="explorer">Explore my Fullstack learning projects</h2>
         <div class="grid__fr">
@@ -127,9 +142,8 @@
             <h3>MyFlix API (Backend)</h3>
             <p>
               This project introduced <mark>Server Side Programming</mark> and
-              <mark>Node</mark>. The outcome is an API that can connect a
-              mongo database with different frontends. It uses a token for
-              security.
+              <mark>Node</mark>. The outcome is an API that can connect a mongo
+              database with different frontends. It uses a token for security.
             </p>
             <img
               src="./img/token_remote.png"
@@ -184,9 +198,7 @@
             <a href="https://dkause.github.io/meet">See project in Action</a>
           </div>
           <div>
-            <h3>
-              Native App Development - Chat Client with React Native
-            </h3>
+            <h3>Native App Development - Chat Client with React Native</h3>
             <p>
               Elephant-Chat uses <mark>Firebase</mark> for real-time messaging.
               Users can send text messages, images, and share their location.<br />
@@ -204,9 +216,7 @@
             <a href="https://dkause.github.io/meet">See project in Action</a>
           </div>
           <div>
-            <h3>
-                          Client in Angular for MyFlixAPI
-            </h3>
+            <h3>Client in Angular for MyFlixAPI</h3>
             <p>
               This project showcases a <mark>Angular</mark> based web app. The
               user can browse movies, view details and manage their favorite
@@ -230,19 +240,36 @@
         </div>
       </section>
     </main>
-    <!-- This is footer including contact data-->
-    <footer class="container page-footer">
-      <div class="page-footer__item page-footer__adress">
-        Daniel Kause<br />
-        Bänschstr. 26<br />
-        10247 Berlin<br />
-        Deutschland<br />
+    <!-- This is the footer including contact data-->
+    <footer class="container footer">
+      <div>
+        <h3>Kontakt und Adresse</h3>
+        <address class="footer__address">
+          <div data-h-card>
+            <span data-p-name>Daniel Kause</span><br />
+            <span data-p-org>SMartde eG</span><br />
+            <div data-p-adr>
+              <span data-p-street-address>Wilhelmstr. 150</span><br />
+              <span data-p-postal-code>10963</span>
+              <span data-p-locality>Berlin</span><br />
+              <span data-p-country-name>Deutschland</span>
+            </div>
+          </div>
+        </address>
       </div>
 
-      <div class="page-footer__item" id="contact">
-        Phone: <a href="tel:+491605535613">+49 160 5535613</a><br />
-        Email:
-        <a href="mailto:d.g.kause@gmail.com">d.g.kause@gmail.com</a>
+      <div class="footer__contact" id="contact" data-h-card>
+        <h3>Direkter Kontakt</h3>
+        <p>
+          <a data-p-tel href="tel:+491605535613"
+            ><span class="footer__label">Telefon:</span
+            ><span data-p-value>+49 160 5535613</span></a
+          >
+          <a data-p-email href="mailto:d.g.kause@gmail.com"
+            ><span class="footer__label">E-Mail:</span
+            ><span data-p-email-value="">d.g.kause@gmail.com</span></a
+          >
+        </p>
       </div>
     </footer>
   </body>
