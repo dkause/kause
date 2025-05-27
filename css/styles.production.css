@@ -380,3 +380,8 @@ mark {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+.logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 200%;
+  font-weight: 100;
+}
