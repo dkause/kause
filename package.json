@@ -1,0 +1,22 @@
+{
+  "name": "kause",
+  "version": "1.0.0",
+  "description": "To achieve my certificate I created this plain site using HTML, CSS and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purge": "purgecss --css css/styles.css --content index.html --output css/styles.purged.css",
+    "images": "node scripts/process-images.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "purgecss": "^7.0.2"
+  },
+  "dependencies": {
+    "sharp": "^0.34.2"
+  }
+}
